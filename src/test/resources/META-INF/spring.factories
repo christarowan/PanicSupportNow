@@ -1,0 +1,1 @@
+org.springframework.test.context.ContextCustomizerFactory = com.zipcode.panic.config.TestContainersSpringContextCustomizerFactory
