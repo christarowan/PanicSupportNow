@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20230423200951",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "soundtrack",
+  "fields": [
+    {
+      "fieldName": "fileName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Soundtrack",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "actionPlan",
+      "otherEntityRelationshipName": "soundtrack",
+      "ownerSide": false,
+      "relationshipName": "actionPlan",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "no"
+}

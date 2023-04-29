@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20230423200952",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "coping_strategies",
+  "fields": [
+    {
+      "fieldName": "contents",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "CopingStrategies",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "actionPlan",
+      "otherEntityRelationshipName": "copingStrategies",
+      "ownerSide": false,
+      "relationshipName": "actionPlan",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "no"
+}

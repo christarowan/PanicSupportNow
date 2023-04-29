@@ -1,0 +1,35 @@
+
+entity ActionPlan {
+
+}
+
+entity Soundtrack {
+  fileName String
+  name String
+
+}
+
+entity CopingStrategies {
+	contents String
+    name String
+}
+
+entity PhoneLink {
+    number String
+    name String
+
+}
+
+relationship OneToOne {
+	ActionPlan to Soundtrack
+}
+
+relationship OneToOne {
+	ActionPlan to CopingStrategies
+}
+
+relationship OneToMany {
+	ActionPlan to PhoneLink
+}
+
+

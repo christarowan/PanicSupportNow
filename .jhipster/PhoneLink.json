@@ -1,0 +1,31 @@
+{
+  "applications": "*",
+  "changelogDate": "20230423200953",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "phone_link",
+  "fields": [
+    {
+      "fieldName": "number",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "PhoneLink",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "actionPlan",
+      "otherEntityRelationshipName": "phoneLink",
+      "relationshipName": "actionPlan",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

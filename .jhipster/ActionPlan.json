@@ -1,0 +1,36 @@
+{
+  "applications": "*",
+  "changelogDate": "20230423200950",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "action_plan",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ActionPlan",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "soundtrack",
+      "otherEntityRelationshipName": "actionPlan",
+      "ownerSide": true,
+      "relationshipName": "soundtrack",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "copingStrategies",
+      "otherEntityRelationshipName": "actionPlan",
+      "ownerSide": true,
+      "relationshipName": "copingStrategies",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "phoneLink",
+      "otherEntityRelationshipName": "actionPlan",
+      "relationshipName": "phoneLink",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}
