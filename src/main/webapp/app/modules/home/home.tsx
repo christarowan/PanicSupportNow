@@ -15,6 +15,7 @@ export const Home = () => {
 
   useEffect(() => {
     audio.play();
+    setAudioPlaying(true);
   }, []);
 
   const handleAudioButtonClick = () => {
@@ -39,43 +40,36 @@ export const Home = () => {
             Help is here
           </p>
         </div>
-
-        {account?.login ? (
-          <div>
-            <Alert color="success">You are logged in as user &quot;{account.login}&quot;.</Alert>
-          </div>
-        ) : (
-          <div className="text-right">
-            <Alert color="warning" className="custom-alert custom-alert-large">
-              Have you taken your medication?
-              <span>&nbsp;</span>
-              <Link to="/login" className="alert-link"></Link>
-              <br style={{ marginBottom: '10px' }} />
-              <br style={{ marginTop: '10px' }} />
-              Do you have a rubberband to snap?
-              <br style={{ marginBottom: '10px' }} />
-              <br />
-              Would you like to call your support person? Press the button below this box.
-              <br style={{ marginBottom: '10px' }} />
-              <br />
-              Press the 'Next prompt' button on the left to walk through a grounding exercise.
-              <br />
-              <div className="button-container" style={{ display: 'flex', alignItems: 'center' }}>
-                {audioPlaying ? (
-                  <button className="audio-button" onClick={handleAudioButtonClick}>
-                    Click to stop audio
-                  </button>
-                ) : (
-                  <button className="audio-button" onClick={handleAudioButtonClick}>
-                    Click to play audio
-                  </button>
-                )}
-                <button className="call-button">Call</button>
-                <button className="next-button btn btn-primary">Next prompt</button>
-              </div>
-            </Alert>
-          </div>
-        )}
+        <div className="text-right">
+          <Alert color="warning" className="custom-alert custom-alert-large">
+            Have you taken your medication?
+            <span>&nbsp;</span>
+            <Link to="/login" className="alert-link"></Link>
+            <br style={{ marginBottom: '10px' }} />
+            <br style={{ marginTop: '10px' }} />
+            Do you have a rubberband to snap?
+            <br style={{ marginBottom: '10px' }} />
+            <br />
+            Would you like to call your support person? Press the button below this box.
+            <br style={{ marginBottom: '10px' }} />
+            <br />
+            Press the 'Next prompt' button on the left to walk through a grounding exercise.
+            <br />
+            <div className="button-container" style={{ display: 'flex', alignItems: 'center' }}>
+              {audioPlaying ? (
+                <button className="audio-button" onClick={handleAudioButtonClick}>
+                  Click to stop audio
+                </button>
+              ) : (
+                <button className="audio-button" onClick={handleAudioButtonClick}>
+                  Click to play audio
+                </button>
+              )}
+              <button className="call-button">Call</button>
+              <button className="next-button btn btn-primary">Next prompt</button>
+            </div>
+          </Alert>
+        </div>
       </Col>
     </Row>
   );

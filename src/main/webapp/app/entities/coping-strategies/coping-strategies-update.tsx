@@ -85,7 +85,7 @@ export const CopingStrategiesUpdate = () => {
               {!isNew ? (
                 <ValidatedField name="id" required readOnly id="coping-strategies-id" label="ID" validate={{ required: true }} />
               ) : null}
-              <ValidatedField label="Contents" id="coping-strategies-contents" name="contents" data-cy="contents" type="text" />
+              <ValidatedField label="Contents" id="coping-strategies-contents" name="contents" data-cy="contents" type="textarea" />
               <ValidatedField label="Name" id="coping-strategies-name" name="name" data-cy="name" type="text" />
               <Button tag={Link} id="cancel-save" data-cy="entityCreateCancelButton" to="/coping-strategies" replace color="info">
                 <FontAwesomeIcon icon="arrow-left" />
