@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title></title>
+    <meta name="next-head-count" content="3" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="preconnect" href="https://cdn.openai.com" />
+    <link rel="preload" href="https://cdn.openai.com/common/fonts/soehne/soehne-buch.woff2" as="font" crossorigin="" />
+    <link rel="preload" href="https://cdn.openai.com/common/fonts/soehne/soehne-halbfett.woff2" as="font" crossorigin="" />
+    <link rel="preload" href="https://cdn.openai.com/common/fonts/soehne/soehne-mono-buch.woff2" as="font" crossorigin="" />
+    <link rel="preload" href="https://cdn.openai.com/common/fonts/soehne/soehne-mono-halbfett.woff2" as="font" crossorigin="" />
+    <meta name="description" content="A conversational AI system that listens, learns, and challenges" />
+    <meta property="og:title" content="ChatGPT" />
+    <meta property="og:image" content="https://openai.com/content/images/2022/11/ChatGPT.jpg" />
+    <meta property="og:description" content="A conversational AI system that listens, learns, and challenges" />
+    <meta property="og:url" content="https://chat.openai.com" />
+    <link rel="preload" href="/_next/static/css/ab65eabeb52e151d.css" as="style" />
+    <link rel="stylesheet" href="/_next/static/css/ab65eabeb52e151d.css" data-n-g="" />
+    <noscript data-n-css=""></noscript>
+    <script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+    <script src="/_next/static/chunks/webpack-187c2fb3a2a5a31c.js" defer=""></script>
+    <script src="/_next/static/chunks/framework-7a789ee31d2a7534.js" defer=""></script>
+    <script src="/_next/static/chunks/main-149b337e061b4d04.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/_app-1a16f2490a95f499.js" defer=""></script>
+    <script src="/_next/static/chunks/bd26816a-981e1ddc27b37cc6.js" defer=""></script>
+    <script src="/_next/static/chunks/1f110208-44a6f43ddc5e9011.js" defer=""></script>
+    <script src="/_next/static/chunks/012ff928-068d47cfb9bb18cd.js" defer=""></script>
+    <script src="/_next/static/chunks/68a27ff6-1185184b61bc22d0.js" defer=""></script>
+    <script src="/_next/static/chunks/92-da0b5e933a63217f.js" defer=""></script>
+    <script src="/_next/static/chunks/885-7d7543d585004945.js" defer=""></script>
+    <script src="/_next/static/chunks/795-81f9cad988575dae.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/index-1825ab1389a0eebb.js" defer=""></script>
+    <script src="/_next/static/DZ5JfvRmgrIqUfXR_0bBI/_buildManifest.js" defer=""></script>
+    <script src="/_next/static/DZ5JfvRmgrIqUfXR_0bBI/_ssgManifest.js" defer=""></script>
+  </head>
+  <body>
+    <div id="__next">
+      <script>
+        !(function () {
+          try {
+            var d = document.documentElement,
+              c = d.classList;
+            c.remove('light', 'dark');
+            var e = localStorage.getItem('theme');
+            if ('system' === e || (!e && true)) {
+              var t = '(prefers-color-scheme: dark)',
+                m = window.matchMedia(t);
+              if (m.media !== t || m.matches) {
+                d.style.colorScheme = 'dark';
+                c.add('dark');
+              } else {
+                d.style.colorScheme = 'light';
+                c.add('light');
+              }
+            } else if (e) {
+              c.add(e || '');
+            }
+            if (e === 'light' || e === 'dark') d.style.colorScheme = e;
+          } catch (e) {}
+        })();
+      </script>
+      <div></div>
+      <div class="overflow-hidden w-full h-full relative flex">
+        <div class="dark hidden flex-shrink-0 bg-gray-900 md:flex md:w-[260px] md:flex-col">
+          <div class="flex h-full min-h-0 flex-col">
+            <div class="scrollbar-trigger relative h-full w-full flex-1 items-start border-white/20">
+              <nav class="flex h-full w-full flex-col p-2">
+                <a
+                  class="flex py-3 px-3 items-center gap-3 transition-colors duration-200 text-white cursor-pointer text-sm rounded-md border border-white/20 hover:bg-gray-500/10 mb-1 flex-shrink-0"
+                  ><svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-4 w-4"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line></svg
+                  >New chat</a
+                >
+                <div class="absolute left-0 top-14 z-20 overflow-hidden transition-all duration-500 max-h-0">
+                  <div class="bg-gray-900 px-4 py-3">
+                    <div class="p-1 text-sm text-gray-100">Chat History is off.</div>
+                    <div class="p-1 text-xs text-gray-500">
+                      Chats won’t be saved in your history or used for training our models to improve ChatGPT. Unsaved chats will be deleted
+                      from our systems within 30 days.<!-- -->
+                      <a href="https://help.openai.com/en/articles/7730893" target="_blank" class="underline" rel="noreferrer"
+                        >Learn more</a
+                      >
+                    </div>
+                    <button class="btn relative btn-primary mt-4 w-full">
+                      <div class="flex w-full items-center justify-center gap-2">
+                        <svg
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="h-4 w-4"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path>
+                          <line x1="12" y1="2" x2="12" y2="12"></line></svg
+                        >Enable chat history
+                      </div>
+                    </button>
+                  </div>
+                  <div class="h-24 bg-gradient-to-t from-gray-900/0 to-gray-900"></div>
+                </div>
+                <div class="flex-col flex-1 transition-opacity duration-500 overflow-y-auto">
+                  <div class="flex flex-col gap-2 pb-2 text-gray-100 text-sm"><div></div></div>
+                </div>
+                <div class="border-t border-white/20 pt-2">
+                  <div class="group relative" data-headlessui-state="">
+                    <button
+                      class="flex w-full items-center gap-2.5 rounded-md py-3 px-3 text-sm transition-colors duration-200 hover:bg-gray-800 group-ui-open:bg-gray-800"
+                      id="headlessui-menu-button-:Rd2td6:"
+                      type="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      data-headlessui-state=""
+                    >
+                      <div class="-ml-0.5 w-5 flex-shrink-0"></div>
+                      <div class="grow overflow-hidden text-ellipsis whitespace-nowrap text-left text-white"></div>
+                      <svg
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="h-4 w-4 flex-shrink-0 text-gray-500"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="19" cy="12" r="1"></circle>
+                        <circle cx="5" cy="12" r="1"></circle>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="flex h-full max-w-full flex-1 flex-col">
+          <main class="relative h-full w-full transition-width flex flex-col overflow-hidden items-stretch flex-1">
+            <div class="flex-1 overflow-hidden"></div>
+            <div
+              class="absolute bottom-0 left-0 w-full border-t md:border-t-0 dark:border-white/20 md:border-transparent md:dark:border-transparent md:bg-vert-light-gradient bg-white dark:bg-gray-800 md:!bg-transparent dark:md:bg-vert-dark-gradient pt-2"
+            >
+              <form class="stretch mx-2 flex flex-row gap-3 last:mb-2 md:mx-4 md:last:mb-6 lg:mx-auto lg:max-w-2xl xl:max-w-3xl">
+                <div class="relative flex h-full flex-1 items-stretch md:flex-col">
+                  <div class=""><div class="h-full flex ml-1 md:w-full md:m-auto md:mb-2 gap-0 md:gap-2 justify-center"></div></div>
+                  <div
+                    class="flex flex-col w-full py-2 flex-grow md:py-3 md:pl-4 relative border border-black/10 bg-white dark:border-gray-900/50 dark:text-white dark:bg-gray-700 rounded-md shadow-[0_0_10px_rgba(0,0,0,0.10)] dark:shadow-[0_0_15px_rgba(0,0,0,0.10)]"
+                  >
+                    <textarea
+                      tabindex="0"
+                      data-id="root"
+                      style="max-height: 200px"
+                      rows="1"
+                      placeholder="Send a message."
+                      class="m-0 w-full resize-none border-0 bg-transparent p-0 pr-7 focus:ring-0 focus-visible:ring-0 dark:bg-transparent pl-2 md:pl-0"
+                    ></textarea
+                    ><button
+                      disabled=""
+                      class="absolute p-1 rounded-md text-gray-500 bottom-1.5 md:bottom-2.5 hover:bg-gray-100 enabled:dark:hover:text-gray-400 dark:hover:bg-gray-900 disabled:hover:bg-transparent dark:disabled:hover:bg-transparent right-1 md:right-2 disabled:opacity-40"
+                    >
+                      <svg
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="h-4 w-4 mr-1"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <div class="px-3 pt-2 pb-3 text-center text-xs text-gray-600 dark:text-gray-300 md:px-4 md:pt-3 md:pb-6">
+                <span
+                  >Free Research Preview. ChatGPT may produce inaccurate information about people, places, or facts.
+                  <a
+                    href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="underline"
+                    >ChatGPT Mar 23 Version</a
+                  ></span
+                >
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+      <div class="absolute top-0 left-0 right-0 z-[2]"></div>
+    </div>
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "props": {
+          "pageProps": {
+            "user": {
+              "id": "user-xKHcZxuj5gjW55gH2nKxlGUj",
+              "name": "christa.law@gmail.com",
+              "email": "christa.law@gmail.com",
+              "image": "https://s.gravatar.com/avatar/c690af68b48abd8e23ab4c3edf8549d4?s=480\u0026r=pg\u0026d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fch.png",
+              "picture": "https://s.gravatar.com/avatar/c690af68b48abd8e23ab4c3edf8549d4?s=480\u0026r=pg\u0026d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fch.png",
+              "mfa": false,
+              "groups": [],
+              "intercom_hash": "621548f4895d9a63346d51677b810b28fcf2ba969af8a8808a1ce290c60908aa"
+            },
+            "serviceStatus": {},
+            "userCountry": "US",
+            "geoOk": true,
+            "serviceAnnouncement": { "public": {}, "paid": {} },
+            "isUserInCanPayGroup": true
+          },
+          "__N_SSP": true
+        },
+        "page": "/",
+        "query": {},
+        "buildId": "DZ5JfvRmgrIqUfXR_0bBI",
+        "isFallback": false,
+        "gssp": true,
+        "scriptLoader": []
+      }
+    </script>
+    <script>
+      (function () {
+        var js =
+          "window['__CF$cv$params']={r:'7bfb144f0f3743a6',m:'Nqu.N6_gYqewhaGviP_23x6WIOTLVRrpCCd1fFxqoWQ-1682808368-0-ARr+Ai5TPUXBFJGUcSZyh4eekFP7Az6IewDxecCBWFjd',u:'/cdn-cgi/challenge-platform/h/g'};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/invisible.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";
+        var _0xh = document.createElement('iframe');
+        _0xh.height = 1;
+        _0xh.width = 1;
+        _0xh.style.position = 'absolute';
+        _0xh.style.top = 0;
+        _0xh.style.left = 0;
+        _0xh.style.border = 'none';
+        _0xh.style.visibility = 'hidden';
+        document.body.appendChild(_0xh);
+        function handler() {
+          var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;
+          if (_0xi) {
+            var _0xj = _0xi.createElement('script');
+            _0xj.nonce = '';
+            _0xj.innerHTML = js;
+            _0xi.getElementsByTagName('head')[0].appendChild(_0xj);
+          }
+        }
+        if (document.readyState !== 'loading') {
+          handler();
+        } else if (window.addEventListener) {
+          document.addEventListener('DOMContentLoaded', handler);
+        } else {
+          var prev = document.onreadystatechange || function () {};
+          document.onreadystatechange = function (e) {
+            prev(e);
+            if (document.readyState !== 'loading') {
+              document.onreadystatechange = prev;
+              handler();
+            }
+          };
+        }
+      })();
+    </script>
+  </body>
+</html>

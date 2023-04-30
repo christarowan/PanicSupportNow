@@ -1,0 +1,41 @@
+.my-custom-class {
+  background-color: #67c0d6; /* replace with your desired color */
+  height: 200px;
+}
+
+.lead {
+  color: rgb(215, 39, 147);
+}
+h2 {
+  color: rgb(2, 41, 6);
+}
+.custom-alert {
+  background-color: #17cf98; /* replace with your desired background color */
+}
+.custom-alert {
+  color: rgb(14, 89, 230); /* replace 'red' with the color of your choice */
+}
+.custom-alert-large {
+  font-size: 24px;
+  padding: 30px;
+  margin: 30px;
+}
+.custom-alert {
+  height: 400px;
+  width: 500px;
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.button-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.audio-button,
+.call-button,
+.next-button {
+  margin-right: 10px;
+}
